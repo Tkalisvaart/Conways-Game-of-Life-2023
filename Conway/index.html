@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of Life</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="controls-wrapper">
+        <div class="controls">
+          <div class="buttons">
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+          </div>
+          <div class="speed-control">
+            <label for="speed">Growth Rate:</label>
+            <input type="range" id="speed" min="10" max="1000" step="1" value="500">
+          </div>
+          <div class="generation-counter">
+            Generation: <span id="generation">0</span>
+          </div>
+        </div>
+      </div>      
+    <div class="container">
+        <canvas id="gameCanvas"></canvas>
+    </div>
+    <script src="gameOfLife.js"></script>
+</body>
+</html>
+
+
