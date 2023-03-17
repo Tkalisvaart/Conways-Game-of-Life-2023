@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+    <title>Developer Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </nav>
+        <div class="controls">
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="reset">Reset</button>
+            <p>Refresh Rate <input type="range" id="speed" min="100" max="900" value="500"></p>
+            <p>Epoch: <span id="generation">0</span></p>
+        </div>
+        
+    </header>    
+    <main>
+
+        <section id="home">
+            <div class="canvas-container">
+            <canvas id="gameCanvas"></canvas>
+            <div class="title">
+                <h1>Tim Kalisvaart</h1>
+                <p>Full-Stack Developer</p>
+            </div>
+            </div>
+        </section>
+  
+        <section id="about">
+            <h2>About</h2>
+            <p><!-- Your about content here --></p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <article>
+                <h3>Job Title</h3>
+                <p>Company Name</p>
+                <p>Duration</p>
+                <p>Description</p>
+            </article>
+            <!-- Add more experiences as needed -->
+        </section>
+                
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project"><!-- Project content here --></div>
+            <!-- Add more projects as needed -->
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p><!-- Your contact information or a contact form --></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Timothy Kalisvaart. All rights reserved.</p>
+    </footer>
+</body>
+</html>
